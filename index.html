@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header id="header" class="mx-4">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo"
+            id="header-img">
+        <nav id="nav-bar" class="d-none d-sm-block">
+            <ul id="menu-bar">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#features">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="hero mb-5 text-center">
+            <h4 class="mb-3">Handcrafted, home-made masterpieces</h4>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input class="w-25 p-1" type="email" name="email" id="email" placeholder="Enter your email address"
+                    required><br>
+                <input type="submit" value="Get started" id="submit" class="btn m-3">
+            </form>
+        </div>
+        <div id="features">
+            <div class="row m-3 align-items-center justify-content-center">
+                <div class="col-12 col-sm-2 offset-1">
+                    <i class="display-4 d-none d-sm-block bi bi-bag-check"></i>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h3>Premium Materials</h3>
+                    <p class="desc">Our trombones use the shiniest brass which is sourced locally. This will
+                        increase the
+                        longevity of your purchase.</p>
+                </div>
+            </div>
+            <div class="row m-3 align-items-center justify-content-center">
+                <div class="col-12 col-sm-2 offset-1">
+                    <!-- <img src="img/car.png" alt="car img"> -->
+                    <i class="display-4 d-none d-sm-block bi bi-truck"></i>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h3>Fast Shipping</h3>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                        free
+                        returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="row m-3 align-items-center justify-content-center">
+                <div class="col-12 col-sm-2 offset-1">
+                    <!-- <img src="img/battery.png" alt="battery img"> -->
+                    <i class="display-4 d-none d-sm-block bi bi-battery-full"></i>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h3>Quality Assurance</h3>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test
+                        the pitch of your instrument.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- * video * -->
+        <!-- <div class="embed-responsive embed-responsive-16by9 text-center">
+            <iframe id="video" class="embed-responsive-item" src="https://www.videvo.net/video/dummy/584/"
+                allowfullscreen></iframe>
+        </div> -->
+
+        <!-- * cards * -->
+        <div class="container text-center my-5" id="pricing">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            TENOR TROMBONE
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$600</h5>
+                            <p class="card-text my-4">Lorem ipsum <br>
+                                Lorem ipsum <br>
+                                Lorem ipsum dolor <br>
+                                Lorem ipsum.</p>
+                            <a href="#" class="btn">select</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            BASS TROMBONE
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$900</h5>
+                            <p class="card-text my-4">Lorem ipsum <br>
+                                Lorem ipsum <br>
+                                Lorem ipsum dolor <br>
+                                Lorem ipsum.</p>
+                            <a href="#" class="btn">select</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            VALVE TROMBONE
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$1200</h5>
+                            <p class="card-text my-4">Plays similar to a Trumpet <br>
+                                Great for Jazz Bands <br>
+                                Lorem ipsum dolor. <br>
+                                Lorem ipsum.</p>
+                            <a href="#" class="btn">select</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- * footer * -->
+        <footer class="bg-light text-end">
+            <!-- Copyright -->
+            <div class="p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+                <p>Privacy Terms Contact <br>
+                    Copyright 2016, Original Trombones</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
